@@ -69,6 +69,10 @@ li {
   height: 100px;
 }
 
+div > h3 > .img {
+  display: none;
+}
+
 /* html {
   background-color: #dedede;
 }
