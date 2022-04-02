@@ -10,6 +10,12 @@ nav {
   margin: 0 auto;
   height: 60px;
 }
+ol {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
 .buger1 {
   display: inline-block;
   width: 80px;
@@ -20,12 +26,13 @@ nav {
   text-align: center;
   line-height: 50px;
 }
+
 .buger {
   background-color: black;
   border: 2px solid black;
   margin: 2px;
 }
-ol {
+nav > ol {
   list-style: none;
   display: flex;
   margin: 0;
@@ -72,7 +79,27 @@ li {
 div > h3 > .img {
   display: none;
 }
-
+.menu-list > ol {
+  width: 1520px;
+  text-align: center;
+}
+.menu-list > ol > li {
+  width: 380px;
+}
+.big-menu:hover ~ .menu-list {
+  display: block;
+}
+.menu-list:hover {
+  display: block;
+}
+.menu-list {
+  width: 1520px;
+  height: 300px;
+  position: absolute;
+  z-index: 1;
+  border: 1px solid black;
+  display: none;
+}
 /* html {
   background-color: #dedede;
 }

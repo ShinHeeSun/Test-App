@@ -1,14 +1,12 @@
 import React from 'react';
-// import OneToFifty from './Components/OneToFifty';
-import Main from './Components/Main';
-// import Test from './Components/Test';
-
+// import Login from './Components/Login';
+import EventPractice from './Components/TestComponents/EventPractice';
 function App() {
   return (
     <div className="App">
-      <Main />
-      {/* <OneToFifty /> */}
-      {/* <Test /> */}
+      <EventPractice />
+
+      {/* <Login /> */}
     </div>
   );
 }
