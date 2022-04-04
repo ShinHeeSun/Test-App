@@ -1,14 +1,13 @@
 import React from 'react';
-import Header from './Main-components/Header';
-import Nav from './Main-components/Nav';
-import Slide from './Main-components/Slide';
+// import Header from './Main-components/Header';
+// import Nav from './Main-components/Nav';
+
 
 function Main() {
   return (
     <div>
-      <Header />
-      <Nav />
-      <Slide />
+      {/* <Header />
+      <Nav /> */}
     </div>
   );
 }

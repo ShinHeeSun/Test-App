@@ -5,11 +5,7 @@ header {
   width: 1520px;
   margin: 0 auto;
 }
-nav {
-  width: 1520px;
-  margin: 0 auto;
-  height: 60px;
-}
+
 ol {
   list-style: none;
   display: flex;
@@ -100,94 +96,4 @@ div > h3 > .img {
   border: 1px solid black;
   display: none;
 }
-/* html {
-  background-color: #dedede;
-}
 
-.back {
-  position: absolute;
-  width: 80px;
-  height: 440px;
-  border: solid;
-  border-left: 4px;
-  border-top: 4px;
-  z-index: 1;
-  margin: 0;
-  top: 0%;
-}
-
-.back1 {
-  position: absolute;
-  width: 80px;
-  height: 440px;
-  border: solid;
-  border-left: 4px;
-  border-bottom: 4px;
-  top: 634px;
-}
-.back2 {
-  position: absolute;
-  width: 1700px;
-  height: 440px;
-  border: solid;
-  border-right: 4px;
-  border-top: 4px;
-  left: 216px;
-  top: 0%;
-}
-.back3 {
-  position: absolute;
-  width: 1700px;
-  height: 440px;
-  border: solid;
-  border-right: 4px;
-  border-bottom: 4px;
-  left: 216px;
-  top: 634px;
-}
-.menu1 ~ p {
-  position: absolute;
-  font-size: 25px;
-  width: 280px;
-  height: 44px;
-  top: 300px;
-  left: 300px;
-  margin: 0;
-  align-items: center;
-}
-.menu1 ~ p + p {
-  position: absolute;
-  width: 280px;
-  height: 44px;
-  font-size: 25px;
-  top: 344px;
-  text-align: end;
-}
-
-.menu1 {
-  position: absolute;
-  top: 15px;
-  left: 300px;
-  width: 280px;
-  height: 280px;
-  background-color: white;
-  border-radius: 50px;
-}
-.menu2 {
-  position: absolute;
-  top: 15px;
-  left: 642px;
-  width: 280px;
-  height: 280px;
-  background-color: white;
-  border-radius: 50px;
-}
-.menu3 {
-  position: absolute;
-  top: 15px;
-  left: 984px;
-  width: 280px;
-  height: 280px;
-  background-color: white;
-  border-radius: 50px;
-} */

@@ -1,11 +1,13 @@
 import React from 'react';
 // import Login from './Components/Login';
-import EventPractice from './Components/TestComponents/EventPractice';
+// import Join from './Components/Join';
+import Test from './Components/Test';
+
 function App() {
   return (
     <div className="App">
-      <EventPractice />
-
+      <Test />
+      {/* <Join /> */}
       {/* <Login /> */}
     </div>
   );
