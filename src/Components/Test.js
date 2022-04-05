@@ -7,7 +7,7 @@ function Test() {
   return (
     <Router>
       <Navbar />
-      <div>
+      <div className="mt-3 container">
         <Switch>
           {routes.map((route) => (
             <Route

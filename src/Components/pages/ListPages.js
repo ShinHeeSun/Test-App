@@ -1,36 +1,53 @@
-import React, {useState, useEffect} from "react";
-import axios from "axios";
+import React, { useState, useEffect } from 'react';
+import { useHistory } from 'react-router';
+import axios from 'axios';
+import Card from '../Card';
+import { Link } from 'react-router-dom';
 
-function ListPages () {
-    const [posts, setPosts] = useState ([]);
+function ListPages() {
+  const history = useHistory();
+  const [posts, setPosts] = useState([]);
 
-    const getPosts =( ) => {
-        axios.get ('http://localhost:3001/posts').then((res)=>{
-            setPosts(res.data);
-            
-        })
-    }
-    useEffect(() => {
-        getPosts();
-    }, []);
-   
-    
+  const getPosts = () => {
+    axios.get('http://localhost:3001/posts').then((res) => {
+      setPosts(res.data);
+    });
+  };
+  useEffect(() => {
+    getPosts();
+  }, []);
 
-    return (
+  return (
+    <div>
+      <div className="d-flex justify-content-between m-3">
+        <h1>User List</h1>
         <div>
-           <h1>user</h1>
-           {posts.map(post => {
-               return (
-                   
-                   <div className="card mb-3" key={post.id}>
-                       <div className="card-body">
-                       ID:{post.id}&nbsp;&nbsp; 
-                       PASSWORD:{post.password}
-                           </div>
-                   </div>
-               );
-           })}
+          <div>
+            <Link to="/blogs/Create" className="btn btn-success">
+              Login
+            </Link>
+          </div>
         </div>
-    );
+      </div>
+      {posts.map((post) => {
+        return (
+          <Card
+            key={post.id}
+            id={post.id}
+            password={post.password}
+            onClick={() => {
+              history.push('/blogs/edit');
+            }}
+          >
+            <div className="d-flex justify-content-between">
+              <div className="card-body">ID: {post.id}</div>
+              <div className="card-body">PASSWORD: {post.password}</div>
+              <button className="card-body">button</button>
+            </div>
+          </Card>
+        );
+      })}
+    </div>
+  );
 }
 export default ListPages;
